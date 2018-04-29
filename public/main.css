@@ -1,0 +1,62 @@
+body: {
+  font-family: 'Federo', sans-serif, 'Grand Hotel', cursive, 'Lily Script One', cursive, 'Parisienne', cursive, 'Sevillana', cursive;
+  background-color: green;
+}
+
+#logo {
+  font-family: 'Federo', sans-serif;
+}
+
+
+h1, h2 {
+  font-family: 'Federo', sans-serif;
+}
+
+h3 {
+  font-family: 'Federo', sans-serif;
+}
+
+h4 {
+font-family: 'Grand Hotel', cursive;
+}
+
+h5 {
+font-family: 'Grand Hotel', cursive;
+font-size: 1.80em;
+}
+
+h6 {
+  font-family: 'Federo', sans-serif;
+}
+
+
+footer {
+  font-family: 'Federo', sans-serif;
+  color: black;
+}
+
+li {
+font-family: 'Federo', sans-serif;
+font-size: 2,0em;
+font-weight: bold;
+color: black;
+}
+
+#navvy {
+  font-family: 'Grand Hotel', cursive;
+  font-size: 1.67em;
+}
+
+
+.titles {
+font-family: 'Federo', sans-serif;
+}
+
+#recolor {
+  background-color: #e7b08e;
+  color: black;
+}
+
+input {
+  font-family: 'Federo', sans-serif;
+}
