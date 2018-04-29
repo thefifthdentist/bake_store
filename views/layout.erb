@@ -3,66 +3,58 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="icon" type="image/png" href="images/bakeress_icon.png"/>
+  <link rel="icon" type="image/png" href="public/images/bakeress_icon.png"/>
   <title>La Boulangerie Fin du Siècle</title>
 
-
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-  <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="parallax-template/css/materialize.min.css"  media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="parallax-template/css/materialize.css"  media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="parallax-template/css/style.css"  media="screen,projection"/>
+<!--  <link href="https://fonts.googleapis.com/css?family=Economica|Nanum+Brush+Script" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Federo|Grand+Hotel|Parisienne|" rel="stylesheet"/>
+  <link href="public/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<!--  <link href="public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+<!--  <link href="main.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
 
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Federo|Grand+Hotel|Lily+Script+One|Parisienne|Sevillana" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"/>
-  <link href="main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <nav>
+    <div class="nav-wrapper" id="navvy">
+      <img id="logo-container" href="/" class="brand-logo center" src="public/images/logo2.png" alt="Pic of Tiny Ornate Cake in Silhouette" class="point"></img>
+      <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down" id="navvy">
+        <li><a href="/cakes"><h6>GÂTEAUX & TARTES</h6></a></li>
+        <li><a href="/pains"><h6>PAINS & BISCUITS</h6></a></li>
+        <li><a href="/savory"><h6>GÂTERIES SAVOUREUSES</h6></a></li>
+      </ul>
+    </div>
+  </nav>
 
- <nav>
-   <div class="nav-wrapper">
-     <a href="#!" class="brand-logo center" id="logo"></a>
-     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-     <ul class="right hide-on-med-and-down">
-       <li><a href="/cakes">Gâteaux & Tartes</a></li>
-       <li><a href="/pains">Pains & Biscuits</a></li>
-       <li><a href="/savory">Gâteries Savoureuses</a></li>
-     </ul>
-   </div>
- </nav>
-
- <ul class="sidenav" id="mobile-demo">
-   <li><a href="/cakes">Gâteaux & Tartes</a></li>
-   <li><a href="/pains">Pains & Biscuits</a></li>
-   <li><a href="savory">Gâteries Savoureuses</a></li>
- </ul>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="/cakes">Gâteaux & Tartes</a></li>
+    <li><a href="/pains">Pains & Biscuits</a></li>
+    <li><a href="savory">Gâteries Savoureuses</a></li>
+  </ul>
 
 </head>
 <body>
 
-
-<%= yield%>
-
+<%= yield %>
 
 
-<script type="text/javascript" src="materialize/js/materialize.js"></script>
-<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-<script type="text/javascript" src="parallax-template/js/materialize.min.js"/>
-<script type="text/javascript" src="parallax-template/js/materialize.js"/
-<script src="main.js"></script>
+
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="public/js/materialize.js"></script>
+<script src="public/js/init.js"></script>
+<script src="public/main.js"></script>
 
 </body>
+<footer class="page-footer" id="recolor">
 
-<footer class="page-footer black">
-  <p>Enter your email to receive our newsletter!</p>
 
 <form action="/form" method="POST">
-<input type="email" name="email" placeholder="Enter your email" required>
+<input type="email" name="email" placeholder="Enter your email to receive our newsletter!" required>
 <input type="submit" value="Send">
 </form>
-<p class="center white-text">Copyright 2018 La Boulangerie Fin du Siècle</p>
+<p class="center black-text" class="titles">Copyright 2018 La Boulangerie Fin du Siècle</p>
 </footer>
-
 
 </html>
