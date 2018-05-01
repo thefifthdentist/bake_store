@@ -29,7 +29,7 @@ post '/form' do
     value: '<img src="images/bakeress_icon.png"><p><strong>La Boulangerie Fin du Siècle Catalog</strong>
     <p>Gâteaux & Tartes:</p>
     <br>Tarte Tatan aux Fleurs Cake - $68.00/ea</br>
-    <br>Baba au Rhum Cake Berry Cake - $68.00/ea</br>
+    <br>Baba au Rhum Berry Cake - $68.00/ea</br>
     <br>Sliced Almond Profiterole Pie - $46.00/ea</br>
     <p>Pains & Biscuits:</p>
     <br>Rosemary Fig Blueberry Bread - $23.00/ea</br>
