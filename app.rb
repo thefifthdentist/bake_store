@@ -3,12 +3,6 @@ require "sendgrid-ruby"
 require "pp"
 include SendGrid
 
-<<<<<<< HEAD
-from = Email.new(email: 'madalena73@gmail.com')
-to = Email.new(email: 'madalena73@gmail.com')
-
-=======
->>>>>>> 7cca79290e0c79f3ea7cc14ea94ea02e4f5e4fc8
 
 get '/' do
     erb :index
