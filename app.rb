@@ -3,9 +3,12 @@ require "sendgrid-ruby"
 require "pp"
 include SendGrid
 
+<<<<<<< HEAD
 from = Email.new(email: 'madalena73@gmail.com')
 to = Email.new(email: 'madalena73@gmail.com')
 
+=======
+>>>>>>> 7cca79290e0c79f3ea7cc14ea94ea02e4f5e4fc8
 
 get '/' do
     erb :index
@@ -32,7 +35,11 @@ post '/form' do
     value: '<img src="images/bakeress_icon.png"><p><strong>La Boulangerie Fin du Siècle Catalog</strong>
     <p>Gâteaux & Tartes:</p>
     <br>Tarte Tatan aux Fleurs Cake - $68.00/ea</br>
+<<<<<<< HEAD
     <br>Baba au Rhum Berry Cake - $68.00/ea</br>
+=======
+    <br>Baba au Rhum Cake Berry Cake - $68.00/ea</br>
+>>>>>>> 7cca79290e0c79f3ea7cc14ea94ea02e4f5e4fc8
     <br>Sliced Almond Profiterole Pie - $46.00/ea</br>
     <p>Pains & Biscuits:</p>
     <br>Rosemary Fig Blueberry Bread - $23.00/ea</br>
