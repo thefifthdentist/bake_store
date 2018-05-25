@@ -1,6 +1,7 @@
  require "sinatra"
  require "sendgrid-ruby"
  require "pp"
+
  include SendGrid
 
 
@@ -20,18 +21,17 @@
      erb :savory
  end
 
- get '/thankyou' do
-   erb :thankyou
- end
+ # get '/thankyou' do
+ #   erb :thankyou
+ # end
 
   post '/form' do
 
     from = Email.new(email: "madalena73@gmail.com")
     to = Email.new(email: params[:email])
     subject = "La Boulangerie Fin du Siècle Catalog"
-    content = Content.new(type: 'text/html',
-    value: "
-    <p><strong>La Boulangerie Fin du Siècle Catalog</strong>
+    content = Content.new(type: 'text/html', value:
+    "<p><strong>La Boulangerie Fin du Siècle Catalog</strong>
     <p>Thanks for subscribing to La Boulangerie Fin du Siècle. Here is our délicieux catalog:</p>
     <br>
     <br>
@@ -63,8 +63,9 @@
       puts response.body
       puts response.headers
 
-      redirect "/"
-  end
 
+      redirect "/thankyou"
+  end
   get "/thankyou" do
+        erb :thankyou
   end
